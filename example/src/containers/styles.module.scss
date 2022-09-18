@@ -1,0 +1,28 @@
+.mainContainer {
+  min-height: 300vh;
+  padding-top: 50vh;
+  background-color: mediumpurple;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  div {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+
+    div {
+      background-color: red;
+    }
+  }
+
+  div + div {
+    margin-top: 100px;
+  }
+
+  .scrollInView {
+    margin-top: 150vh;
+  }
+}

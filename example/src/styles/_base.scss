@@ -1,0 +1,7 @@
+@use 'src/styles/constants' as c;
+
+body {
+  font-family: 'Spoqa Han Sans Neo', sans-serif;
+  font-size: c.$F_P_SIZE;
+  color: c.$C_TEXT;
+}

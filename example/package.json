@@ -1,0 +1,83 @@
+{
+  "name": "outqource-template-react-next",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "_env": "node scripts/set-environment.js",
+    "env:dev": "yarn _env dev",
+    "env:prod": "yarn _env prod",
+    "create:container": "node scripts/create-container.js",
+    "dev": "yarn env:dev && node scripts/create-containers.js && next dev",
+    "prod": "yarn env:prod && next dev",
+    "build:dev": "yarn env:dev && next build",
+    "build:prod": "yarn env:prod && next build",
+    "deploy": "node scripts/ssg-deploy.js -b <BUCKET_NAME> -r ap-northeast-2",
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "husky install",
+    "pre-commit": "lint-staged"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "prettier --config .prettierrc --write"
+    ]
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^2.9.7",
+    "@types/react-slick": "^0.23.10",
+    "@types/react-transition-group": "^4.4.5",
+    "axios": "^0.27.2",
+    "classnames": "^2.3.1",
+    "date-fns": "^2.29.2",
+    "framer-motion": "^7.3.5",
+    "lodash-es": "^4.17.21",
+    "nanoid": "^4.0.0",
+    "next": "12.2.2",
+    "query-string": "^7.1.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.34.0",
+    "react-intersection-observer": "^9.4.0",
+    "react-query": "^3.39.2",
+    "react-slick": "^0.29.0",
+    "react-transition-group": "^4.4.2",
+    "react-use": "^17.4.0",
+    "recoil": "^0.7.4",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^12.2.3",
+    "@svgr/webpack": "^6.3.0",
+    "@types/lodash-es": "^4.17.6",
+    "@types/node": "18.0.6",
+    "@types/react": "18.0.15",
+    "@types/react-dom": "18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "aws-sdk": "^2.1204.0",
+    "camelcase": "6.3.0",
+    "chalk": "4.1.2",
+    "commander": "^9.4.0",
+    "eslint": "8.20.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "12.2.2",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "fs-extra": "^10.1.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.7.1",
+    "sass": "^1.53.0",
+    "stylelint": "^14.9.1",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "stylelint-declaration-strict-value": "^1.9.0",
+    "typescript": "4.7.4"
+  }
+}

@@ -1,0 +1,40 @@
+$S_HEADER_HEIGHT: 60px;
+$S_COUNSEL_HEADER_HEIGHT: 100px;
+$S_COUNSEL_BOTTOM_HEIGHT: 60px;
+$S_GNB_HEIGHT: 60px;
+
+$S_INPUT_SMALL_WIDTH: 100px;
+$S_INPUT_SMALL_HEIGHT: 20px;
+$S_INPUT_MEDIUM_WIDTH: 110px;
+$S_INPUT_MEDIUM_HEIGHT: 36px;
+$S_INPUT_LARGE_WIDTH: 120px;
+$S_INPUT_LARGE_HEIGHT: 44px;
+$S_INPUT_FOOTER_HEIGHT: 50px;
+$S_INPUT_SMALL_FONT: 14px;
+$S_INPUT_MEDIUM_FONT: 15px;
+$S_INPUT_LARGE_FONT: 16px;
+
+@mixin inputSizes {
+  &.small {
+    width: $S_INPUT_SMALL_WIDTH;
+    height: $S_INPUT_SMALL_HEIGHT;
+    font-size: $S_INPUT_SMALL_FONT;
+  }
+
+  &.medium {
+    width: $S_INPUT_MEDIUM_WIDTH;
+    height: $S_INPUT_MEDIUM_HEIGHT;
+    font-size: $S_INPUT_MEDIUM_FONT;
+  }
+
+  &.large {
+    width: $S_INPUT_LARGE_WIDTH;
+    height: $S_INPUT_LARGE_HEIGHT;
+    font-size: $S_INPUT_LARGE_FONT;
+  }
+}
+
+/* stylelint-disable */
+:export {
+  headerHeight: $S_HEADER_HEIGHT;
+}

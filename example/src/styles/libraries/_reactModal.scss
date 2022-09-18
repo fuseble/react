@@ -1,0 +1,25 @@
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.ReactModal__Content {
+  transform: translate(-50%, 100%) scale(0.8);
+  transition: all 0.3s ease-in-out;
+
+  &.ReactModal__Content--after-open {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  &.ReactModal__Content--before-close {
+    transform: translate(-50%, 100%) scale(0.8);
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "@fuseble.inc/react",
+  "version": "1.0.0",
+  "repository": "https://github.com/fuseble/react",
+  "author": "AlpoxDev <contact@fuseble.com>",
+  "description": "FUSEBLE.inc React Library",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "javascript",
+    "typescript"
+  ],
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "jsnext:main": "build/index.es.js",
+  "scripts": {
+    "clear": "rm -rf build/",
+    "build": "yarn clear && tsc",
+    "prepublishOnly": "yarn build"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.18",
+    "@types/qs": "^6.9.7",
+    "@types/react": "^18.0.20",
+    "@types/react-dom": "^18.0.6",
+    "axios": "^0.27.2",
+    "query-string": "^7.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.8.3"
+  },
+  "peerDependencies": {
+    "axios": "^0.27.2",
+    "query-string": "^7.1.1",
+    "react": "^18.2.0"
+  },
+  "dependencies": {
+    "classnames": "^2.3.2",
+    "framer-motion": "^7.3.5",
+    "qs": "^6.11.0",
+    "rc-image": "^5.8.0",
+    "rc-table": "^7.27.2",
+    "react-query": "^3.39.2",
+    "react-use": "^17.4.0",
+    "recoil": "^0.7.5"
+  }
+}
