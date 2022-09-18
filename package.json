@@ -1,5 +1,6 @@
 {
   "name": "@fuseble.inc/react",
+  "private": false,
   "version": "1.0.0",
   "repository": "https://github.com/fuseble/react",
   "author": "AlpoxDev <contact@fuseble.com>",
