@@ -1,29 +1,17 @@
-# react2
+# @fuseble.inc/react
 
 > FUSEBLE.inc react library
 
-[![NPM](https://img.shields.io/npm/v/react2.svg)](https://www.npmjs.com/package/react2) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/@fuseble.inc/react.svg)](https://www.npmjs.com/package/react2) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save react2
+npm install --save @fuseble.inc/react
+yarn add @fuseble.inc/react
 ```
 
 ## Usage
-
-```tsx
-import React, { Component } from 'react'
-
-import MyComponent from 'react2'
-import 'react2/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
-```
 
 ## License
 
